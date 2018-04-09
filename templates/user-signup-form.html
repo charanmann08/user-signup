@@ -2,28 +2,34 @@
 
 {% block content %}
 <h1>Signup</h1>
-<form method="post">
+<form method="POST">
     
-  <label>
-        Username
-        <input type="text" name="username" value='{{username}}'/> &nbsp;<span style="color:red;">{{username_error}}</span>&nbsp;
-  </label>
-  <br></br>
-  <label>
-        Password
-        <input type="password" name="password" value='{{password}}'/>&nbsp;<span style="color:red;">{{password_error}}</span>&nbsp;
-  </label>
-  <br></br>
-  <label>
-        Verify Password
-        <input type="password" name="password_validate" value='{{password_validate}}'/>&nbsp;<span style="color:red;">{{password_validate_error}}</span>&nbsp;
-  </label>
-  <br></br>
-  <label>
-        Email (Optional)
-        <input type="text" name="email" value='{{email}}'/>&nbsp;<span style="color:red;">{{email_error}}</span>&nbsp;
-  </label>
-  <br></br>
+  <tabel>
+      <tr>
+          <td><label><span class ="form_label">Username</span></label></td>
+          <td>
+            <input  name="username" type="text" value='{{username}}'/> &nbsp;<span style="color:red;">{{username_error}}</span>&nbsp;
+           </td>
+      </tr> 
+      <tr>
+          <td><label><span class ="form_label">Password</span></label></td>
+          <td>   
+            <input name="password" type="password"  value='{{password}}'/>&nbsp;<span style="color:red;">{{password_error}}</span>&nbsp;
+          </td>
+      </tr> 
+      <tr>
+          <td><label><span class ="form_label">Verify Password</span></label></td>
+          <td>  
+            <input type="password" name="password_validate" value='{{password_validate}}'/>&nbsp;<span style="color:red;">{{password_validate_error}}</span>&nbsp;
+          </td> 
+      </tr>    
+      <tr>
+          <td><label><span class ="form_label">Email (Optional)</span></label></td>
+          <td>  
+            <input name="email" type="text"  value='{{email}}'/>&nbsp;<span style="color:red;">{{email_error}}</span>&nbsp;
+          </td>
+      </tr>
+   </tabel>       
   
   <input class ="submit" type="submit" value="Submit"/>
 </form>
