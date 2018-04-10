@@ -56,7 +56,7 @@ def user_signup_complete():
 #this creates variables from the form inputs
     username = request.form["username"]
     password = request.form["password"]
-    verify_password = request.form["password_validate"]
+    password_validate = request.form["password_validate"]
     email = request.form["email"]
 
 #this creates empty strings for the error messages 
